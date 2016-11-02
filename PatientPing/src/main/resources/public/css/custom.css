@@ -1,0 +1,362 @@
+/**
+* Custon CSS file by @Nilesh.S.Sawant
+*/
+
+html {
+  overflow: scroll;
+}
+
+.headerRow {
+    height: 56px;
+    background-color: #f2f2f2;
+}
+
+.headerRow > img {
+    padding-left: 35px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    vertical-align: middle;
+}
+
+.sencondRow {
+    height: 46px;
+    background-color: #5dabde;
+}
+
+.sencondRowTest {
+    font-family: 'Open Sans Semibold', sans-serif;
+    color: white;
+    padding-left: 36px;
+}
+
+#sencondRowInnerDiv {
+    padding-top: 12px;
+}
+
+#sencondRowInnerDiv select {
+    -webkit-appearance: none;
+    /*    -moz-appearance: none;*/
+    width: 119px;
+    height: 23px;
+    text-indent: 0.01px;
+    text-align: center;
+    padding-left: 10px;
+    text-overflow: '';
+    background: url(/images/dropdown_icon.png) no-repeat right white;
+}
+
+
+/*
+#sencondRowInnerDiv select::-ms-expand {
+    display: none;
+}
+*/
+
+.filterButton {
+    background-color: #828282;
+    border: none;
+    color: white;
+    height: 55px;
+    width: 100px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-family: sans-serif;
+    font-size: 12px;
+}
+
+.filterButton.active{
+    background: #5dabde;
+}
+
+.st-sort-ascent:before {
+    content: '\25B2';
+}
+
+.st-sort-descent:before {
+    content: '\25BC';
+}
+
+.header-style {
+    font-size: 12px;
+    font-family: 'Open Sans bold', sans-serif;
+    text-align: center;
+    color: white;
+    background-color: #505050;
+}
+
+.header-style th {
+    text-align: center;
+}
+
+.header-filter-style {
+    background: #828282;
+}
+
+#dataTable {
+    table-layout: fixed;
+}
+
+.dataTableWrapper {
+    display: block;
+    height: 55vh;
+    font-size: 12px;
+    font-family: 'Open Sans Semibold', sans-serif;    
+    text-align: center;
+    overflow-y:auto; 
+/*    width: 100%;*/
+    overflow-x: auto;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+/*
+::-webkit-scrollbar {
+    width: 0px;  
+    background: transparent;  
+}
+*/
+
+#dataTable thead {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+/*    display: block;*/
+    overflow:auto;
+    position: relative;
+}
+
+
+#dataTable tbody tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+
+
+input[type="search"] {
+    font-size: 11px;
+    color: #0c81bb;
+    font-family: 'Open Sans Semibold', sans-serif;
+}
+
+::-webkit-input-placeholder {
+    /* WebKit browsers */
+    direction: ltr;
+    text-align: center;
+}
+
+:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    direction: ltr;
+    text-align: center;
+}
+
+::-moz-placeholder {
+    /* Mozilla Firefox 19+ but I'm not sure about working */
+    direction: ltr;
+    text-align: center;
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10+ */
+    direction: ltr;
+    text-align: center;
+}
+.risk-indicator-select {
+    width: 120px;
+}
+
+.filter-and-table-wrapper {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+}
+
+.filter-wrapper {
+    padding-bottom: 10px;
+}
+
+.white{
+    color: white;
+}
+
+.medgrey{
+    color:#828282;
+}
+
+.lightblue{
+    color:#5dabde;
+}
+
+.risk-filter-button {
+    background-color: #5dabde;
+    border: none;
+    color: white;
+    height: 25px;
+    width: 80px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-family: sans-serif;
+    font-size: 12px;   
+}
+
+.risk-filter-button-filter {
+    background-color: #5dabde;
+    border: none;
+    color: white;
+    height: 25px;
+    width: 70px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-family: sans-serif;
+    font-size: 12px;   
+}
+
+.risk-filter-button-reset {
+    background-color: #b7b7b7;
+    border: none;
+    color: white;
+    height: 25px;
+    width: 70px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-family: sans-serif;
+    font-size: 12px;   
+}
+
+.centerAlign {
+    text-align: center;
+}
+
+.popupTitle {
+    font-size: 18px;
+    color: #5dabde;
+    font-family: 'Open Sans Semibold', sans-serif;
+    text-align: center;
+}
+
+.popupModalBodyLineOne {
+    font-size: 15px;
+    color: #505050;
+    font-family: 'Open Sans Bold', sans-serif;   
+}
+
+.popupModalBodyLineTwo {
+    font-size: 18px;
+    color: #828282;
+    font-family: 'Open Sans Semibold', sans-serif;      
+}
+
+.popupModalBodyLineThree {
+    font-size: 18px;
+    color: #5dabde;
+    font-family: 'Open Sans Semibold', sans-serif;       
+}
+
+.myAssgnFilter {
+    margin-top: 38px;
+}
+
+.login-data input[type=text],input[type=password] {
+  width: 100%;
+  height: 40px;
+  display: block;
+  margin-bottom: 10px;
+  position: relative;
+  text-align: center;
+}
+
+.loginButton {
+    background-color: #5dabde;
+    border: none;
+    color: white;
+    height: 55px;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-family: sans-serif;
+    font-size: 12px;
+}
+
+.loginButton:active {
+    background-color: #828282;  
+}
+
+.popupTitleLogin {
+    font-size: 18px;
+    color: black;
+    font-family: 'Open Sans Semibold', sans-serif;
+    text-align: center;
+    background-color: #5dabde;
+}
+
+.errorMessage {
+    color:red;
+}
+
+.loginBox {
+    padding-top: 50px;
+}
+
+.boxStyle {
+    background-color: #f2f2f2;
+    box-shadow: 10px 10px 5px #888888;
+}
+
+.assgn_bt_sz {
+    width: 125px;
+    height: 32px;
+}
+
+
+.form_field {
+    display: inline-block;
+    width: 350px;
+}
+
+.header-style-nurse-table {
+    font-size: 18px;
+    font-family: 'Open Sans bold', sans-serif;
+    text-align: center;
+    color: white;
+    background-color: #505050;    
+}
+
+.cEFBut {
+    background-color: #5dabde;
+    border: none;
+    color: white;
+    height: 35px;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-family: sans-serif;
+    font-size: 12px;    
+}
+
+.cEFBut:active {
+    background-color: #828282;  
+}

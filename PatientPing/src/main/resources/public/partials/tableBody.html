@@ -1,0 +1,52 @@
+<div st-table="rowCollection" st-safe-src="rowCollection_backup">
+    <div class="filter-and-table-wrapper">
+<!--        table data body-->
+        <table id="dataTable" st-safe-src="rowCollection_backup" class="table table-bordered table-striped table-responsive">
+            <thead>
+                <tr class="header-style">
+                    <th st-sort="bookingId">Order ID</th>
+                    <th st-sort="bookingInfo.eventId">Event ID</th>                    
+                    <th st-sort="bookingInfo.customerId">Customer ID</th>
+                    <th st-sort="customerInfo.fName">Customer Name</th>
+                    <th st-sort="customerInfo.lName">Customer Last Name</th>
+                    <th st-sort="customerInfo.email">Customer Email</th>
+                    <th st-sort="bookingInfo.no_of_tickets">Tickets</th>
+                </tr>
+                <tr class="header-filter-style">
+                    <th>
+                        <input st-search="bookingId" placeholder="Search Booking Id" class="input-sm form-control" type="search" />
+                    </th>
+                    <th>
+                        <input st-search="bookingInfo.eventId" placeholder="Search Event Id" class="input-sm form-control" type="search" />
+                    </th>                    
+                    <th>
+                        <input st-search="bookingInfo.customerId" placeholder="Search Customer ID" class="input-sm form-control" type="search" />
+                    </th>
+                    <th>
+                        <input st-search="customerInfo.fName" placeholder="Search Name" class="input-sm form-control" type="search" />
+                    </th>
+                    <th>
+                        <input st-search="customerInfo.lName" placeholder="Search LastName" class="input-sm form-control" type="search" />
+                    </th>
+                    <th>
+                        <input st-search="customerInfo.email" placeholder="Search Email" class="input-sm form-control" type="search" />
+                    </th>
+                    <th>
+                        <input st-search="bookingInfo.no_of_tickets" placeholder="Search Tickets" class="input-sm form-control" type="search" />
+                    </th>
+                </tr>
+            </thead>
+            <tbody class="dataTableWrapper">
+                <tr ng-repeat="row in rowCollection">
+                    <td>{{row.bookingId}}</td> 
+                    <td>{{row.bookingInfo.eventId}}</td>                                                           
+                    <td>{{row.bookingInfo.customerId}}</td>                    
+                    <td>{{row.customerInfo.fName}}</td>                    
+                    <td>{{row.customerInfo.lName}}</td>                    
+                    <td>{{row.customerInfo.email}}</td>                    
+                    <td>{{row.bookingInfo.no_of_tickets}}</td>                    
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

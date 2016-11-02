@@ -1,0 +1,31 @@
+<div class="row">
+    <div class="col-md-offset-4 col-md-4 loginBox">
+        <div class="boxStyle">
+            <div class="modal-header popupTitleLogin">
+                Search Events
+            </div>
+            <div class="modal-body centerAlign login-data">
+                <form class="form-horizontal" name="searchForm" ng-submit = "submitForm(searchForm.$valid)" novalidate>
+                    <div class="form-group">
+                        <label for="alStartID" class="col-sm-offset-1 col-sm-4 control-label">Event Start Id</label>
+                        <div class="col-sm-5">
+                            <input type="text" class="form-control" id="alStartID" placeholder="Start ID" ng-model="data.startId">
+                        </div>
+
+                    </div>
+                    <div class="form-group">
+                        <label for="alEndID" class="col-sm-offset-1 col-sm-4 control-label">Event End Id</label>
+                        <div class="col-sm-5">
+                            <input type="text" class="form-control" id="alEndID" placeholder="End ID" ng-model="data.endId">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" class="col-sm-offset-4 col-sm-4  loginButton" value="Search" />
+                    </div>
+                </form>
+                <span ng-show="isError" class="errorMessage">Please enter Integers between 0 and 99. Also, Start Id should be smaller End ID</span>
+
+            </div>
+        </div>
+    </div>
+</div>
